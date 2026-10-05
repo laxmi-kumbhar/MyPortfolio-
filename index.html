@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laxmi Kumbhar | Full-Stack Developer (React, Python, Flask, MySQL, AWS)</title>
+  <meta name="description"
+    content="Portfolio of Laxmi Kumbhar - Full-Stack Developer specializing in Frontend (HTML, CSS, JS, React), Backend (Python, Flask, NumPy, Pandas, Matplotlib), Database (MySQL, SQLite), and DevOps (AWS, Linux)." />
+  <meta name="keywords"
+    content="Laxmi Kumbhar, Full-Stack Developer, Python Developer, React Developer, Flask, MySQL, SQLite, AWS, Linux, NumPy, Pandas, Matplotlib, JavaScript, Portfolio" />
+  <meta name="author" content="Laxmi Kumbhar" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Laxmi Kumbhar | Full-Stack Developer (React, Python, Flask, MySQL, AWS)" />
+  <meta property="og:description"
+    content="High-performance Full-Stack Web Development: React, Python, Flask, MySQL, SQLite, AWS, and Linux." />
+  <meta property="og:image" content="assets/profile-pic.png" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon / Brand Symbol -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Google Fonts: Outfit (Headings), Plus Jakarta Sans (Body), Fira Code (Terminal/Badges) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome 6.5 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-dark">
+
+  <!-- Scroll Progress Indicator Bar -->
+  <div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- DYNAMIC INTERACTIVE BACKGROUND CANVAS (NEURAL PARTICLE NETWORK) -->
+  <canvas id="bg-canvas" class="bg-particles-canvas" aria-hidden="true"></canvas>
+
+
+  <!-- PERSPECTIVE CYBER GRID WITH LIGHTNING SWEEP -->
+  <div class="cyber-grid-overlay" aria-hidden="true">
+    <div class="grid-sweep-line"></div>
+  </div>
+
+  <!-- Floating Navigation Capsule -->
+  <header class="floating-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" aria-label="Laxmi Kumbhar Home">
+        <div class="brand-avatar">L</div>
+        <span class="brand-title">Laxmi</span>
+      </a>
+
+      <!-- Desktop Navigation Menu (Sequential Pages) -->
+      <nav class="nav-links" id="nav-links" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut"></i><span>About</span></a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-layer-group"></i><span>Skills</span></a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i><span>Projects</span></a>
+        <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i><span>Experience</span></a>
+        <a href="#certificates" class="nav-link"><i class="fa-solid fa-award"></i><span>Certificates</span></a>
+        <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+      </nav>
+
+      <!-- Nav Controls: Theme Switcher, Color Accent, CTA -->
+      <div class="nav-actions">
+        <!-- Theme Mode Toggle Button -->
+        <button class="icon-btn theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode"
+          title="Toggle Theme (T)">
+          <i class="fa-solid fa-sun light-icon"></i>
+          <i class="fa-solid fa-moon dark-icon"></i>
+        </button>
+
+        <!-- Accent Color Switcher Dropdown -->
+        <div class="accent-picker-dropdown">
+          <button class="icon-btn accent-trigger" id="accent-trigger" aria-label="Choose Accent Color"
+            title="Theme Accents">
+            <span class="accent-current-dot"></span>
+          </button>
+          <div class="accent-palette" id="accent-palette" role="menu">
+            <button class="accent-dot-btn active" data-accent="mint" title="Emerald Mint"
+              style="background:#00f5a0;"></button>
+            <button class="accent-dot-btn" data-accent="cyan" title="Cyber Cyan" style="background:#00d9f5;"></button>
+            <button class="accent-dot-btn" data-accent="purple" title="Electric Purple"
+              style="background:#a855f7;"></button>
+            <button class="accent-dot-btn" data-accent="amber" title="Solar Amber" style="background:#f59e0b;"></button>
+            <button class="accent-dot-btn" data-accent="rose" title="Neon Rose" style="background:#f43f5e;"></button>
+          </div>
+        </div>
+
+        <!-- Direct Contact Button -->
+        <button class="btn btn-nav-cta open-contact-btn" id="nav-contact-btn">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="mobile-nav-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <div class="nav-brand">
+          <div class="brand-avatar">L</div>
+          <span class="brand-title">Laxmi</span>
+        </div>
+        <button class="close-drawer-btn" id="close-drawer-btn" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="mobile-links">
+        <a href="#home" class="mobile-link"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="#about" class="mobile-link"><i class="fa-solid fa-user-astronaut"></i><span>About Me</span></a>
+        <a href="#skills" class="mobile-link"><i class="fa-solid fa-layer-group"></i><span>Full-Stack Skills</span></a>
+        <a href="#projects" class="mobile-link"><i class="fa-solid fa-laptop-code"></i><span>Featured Projects</span></a>
+        <a href="#experience" class="mobile-link"><i class="fa-solid fa-briefcase"></i><span>Career Experience</span></a>
+        <a href="#certificates" class="mobile-link"><i class="fa-solid fa-award"></i><span>Certificates</span></a>
+        <a href="MyResume.pdf" target="_blank" download="Laxmi_Kumbhar_Resume.pdf" class="mobile-link"><i class="fa-solid fa-file-pdf"></i><span>Download Resume</span></a>
+        <a href="#contact" class="mobile-link"><i class="fa-solid fa-envelope"></i><span>Contact & Hire</span></a>
+      </div>
+      <div class="mobile-drawer-footer">
+        <a href="MyResume.pdf" target="_blank" download="Laxmi_Kumbhar_Resume.pdf" class="btn btn-secondary w-full mb-2" style="margin-bottom:0.6rem;">
+          <span>Download Resume</span>
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+        <button class="btn btn-primary w-full open-contact-btn">
+          <span>Get In Touch</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN WRAPPER: SEQUENTIAL FULL-PAGE ARCHITECTURE (SHOWN ONE AFTER ANOTHER) -->
+  <main id="main-content" class="container main-content">
+    <div class="portfolio-sections-flow">
+
+      <!-- ================= PAGE 1: HERO SPOTLIGHT ================= -->
+      <section id="home" class="portfolio-page hero-page bento-card hero-spotlight-card interactive-card" data-reveal>
+        <!-- Page Background Dynamic Animation Layer -->
+        <div class="section-bg-fx hero-bg-fx" aria-hidden="true">
+          <div class="fx-floating-glyph glyph-1">&lt;/&gt;</div>
+          <div class="fx-floating-glyph glyph-2">{ ... }</div>
+          <div class="fx-floating-glyph glyph-3">=&gt;</div>
+          <div class="fx-floating-glyph glyph-4">⚡</div>
+        </div>
+
+        <div class="hero-top-bar">
+          <div class="status-pill">
+            <span class="pulse-indicator"></span>
+            <span>Student Placement Coordinator & Engineering Student</span>
+          </div>
+          <div class="badge-role">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Third-Year Computer Engineering • Python • AI/ML</span>
+          </div>
+        </div>
+
+        <div class="hero-main-layout">
+          <div class="hero-text-content">
+            <span class="hero-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span>Hi, I'm Laxmi Kumbhar</span>
+            </span>
+
+            <h1 class="hero-title">
+              Laxmi Kumbhar
+              <span class="hero-role-wrapper">
+                <span class="static-prefix">Building with </span>
+                <span class="dynamic-typed-text" id="typed-role">Technology. Leading with Purpose.</span>
+                <span class="cursor-blink">|</span>
+              </span>
+            </h1>
+
+            <p class="hero-description">
+              I'm a third-year <strong>Computer Engineering student</strong> passionate about <strong>Python, Artificial Intelligence, Machine Learning, and Software Development</strong>. Alongside my technical journey, I serve as a <strong>Student Placement Coordinator</strong>, helping connect students with placement opportunities and contributing to placement-related activities.
+            </p>
+
+            <!-- Hero CTAs -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Projects</span>
+                <i class="fa-solid fa-arrow-down-long"></i>
+              </a>
+              <a href="MyResume.pdf" target="_blank" download="Laxmi_Kumbhar_Resume.pdf" class="btn btn-secondary" title="View &amp; Download Resume (PDF)">
+                <span>Download Resume</span>
+                <i class="fa-solid fa-file-pdf"></i>
+              </a>
+              <a href="#contact" class="btn btn-ghost">
+                <span>Get in Touch</span>
+                <i class="fa-regular fa-paper-plane"></i>
+              </a>
+              <a href="mailto:laxmikumbhar589@gmail.com" class="btn btn-ghost" title="Copy Email"
+                id="quick-copy-email-btn">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Me</span>
+              </a>
+            </div>
+
+            <!-- Fullstack Tech Stack Pills -->
+            <div class="hero-tech-pills">
+              <span class="tech-pill-highlight"><i class="fa-brands fa-python text-blue"></i> Python</span>
+              <span class="tech-pill-highlight"><i class="fa-brands fa-java text-orange"></i> Java</span>
+              <span class="tech-pill-highlight"><i class="fa-solid fa-code text-accent"></i> C / C++</span>
+              <span class="tech-pill-highlight"><i class="fa-solid fa-brain text-purple"></i> Artificial Intelligence</span>
+              <span class="tech-pill-highlight"><i class="fa-solid fa-robot text-cyan"></i> Machine Learning</span>
+              <span class="tech-pill-highlight"><i class="fa-solid fa-sitemap text-yellow"></i> DSA</span>
+              <span class="tech-pill-highlight"><i class="fa-brands fa-react text-cyan"></i> React &amp; Frontend</span>
+              <span class="tech-pill-highlight"><i class="fa-solid fa-user-tie text-yellow"></i> Placement Coordinator</span>
+              <span class="tech-pill-highlight"><i class="fa-solid fa-database text-purple"></i> MySQL &amp; SQL</span>
+              <span class="tech-pill-highlight"><i class="fa-brands fa-git-alt text-rose"></i> Git &amp; GitHub</span>
+            </div>
+          </div>
+
+          <!-- Hero Portrait with Floating Badges -->
+          <div class="hero-visual-wrapper tilt-container">
+            <div class="portrait-card">
+              <img src="assets/profile-pic.png"
+                alt="Laxmi Kumbhar - Third-Year Computer Engineering Student | Python, AI/ML & Placement Coordinator" class="portrait-img"
+                loading="eager" />
+
+              <div class="portrait-corner-badge">
+                <span class="pulse-indicator"></span>
+                <span>Active Coordinator</span>
+              </div>
+            </div>
+
+            <!-- Floating Interactive Badges -->
+            <div class="floating-tag tag-top-right">
+              <i class="fa-brands fa-python"></i>
+              <span>Python, AI & ML</span>
+            </div>
+            <div class="floating-tag tag-bottom-left">
+              <i class="fa-solid fa-user-tie"></i>
+              <span>Placement Coordinator</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Metrics Bar -->
+        <div class="hero-metrics-bar">
+          <div class="metric-item">
+            <div class="metric-number"><span class="counter" data-target="1">1</span>+</div>
+            <div class="metric-label">Years Experience</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-number"><span class="counter" data-target="8">8</span>+</div>
+            <div class="metric-label">Full-Stack Projects</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-number"><span class="counter" data-target="96">96</span>%</div>
+            <div class="metric-label">API & DB Reliability</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-number"><span class="counter" data-target="99">99</span>%</div>
+            <div class="metric-label">Speed & Cloud Uptime</div>
+          </div>
+        </div>
+
+        <!-- Scroll Down Page Indicator -->
+        <div class="hero-scroll-prompt">
+          <a href="#about" class="scroll-down-link" aria-label="Scroll to About Me section">
+            <span>Scroll to explore pages</span>
+            <i class="fa-solid fa-chevron-down animated-bounce"></i>
+          </a>
+        </div>
+      </section>
+
+
+      <!-- ================= PAGE 2: ABOUT ME & EDUCATION ================= -->
+      <section id="about" class="portfolio-page section-page bento-card section-card interactive-card" data-reveal>
+        <!-- Page Background Dynamic Animation Layer -->
+        <div class="section-bg-fx about-bg-fx" aria-hidden="true"></div>
+
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag"><i class="fa-solid fa-id-card-clip"></i> 01. About Me</span>
+            <h2>Building Practical Solutions. Leading with Purpose.</h2>
+          </div>
+          <div class="section-badge-pill">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Engineering &amp; Placement Leadership</span>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-photo tilt-container">
+            <div class="photo-inner">
+              <img src="assets/profile-pic.png" alt="Laxmi Kumbhar portrait" loading="lazy" />
+            </div>
+            <div class="quick-status-card">
+              <div class="status-icon"><i class="fa-solid fa-user-tie"></i></div>
+              <div class="status-info">
+                <strong>Placement Coordinator</strong>
+                <span>Third-Year Computer Engineering • Python &amp; AI/ML</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card-text">
+            <p class="about-lead">
+              I'm <strong>Laxmi Kumbhar</strong>, a third-year Computer Engineering student passionate about <strong>Python, AI/ML, and software development</strong>. I enjoy learning through hands-on projects and continuously improving my problem-solving and technical skills.
+            </p>
+            <p>
+              As a <strong>Student Placement Coordinator</strong>, I also contribute to placement activities while developing my <strong>leadership, communication, and coordination skills</strong>.
+            </p>
+            <p>
+              I'm focused on building practical solutions, gaining real-world experience, and growing into a skilled technology professional.
+            </p>
+
+            <!-- Value Pillars Grid -->
+            <div class="value-pillars">
+              <div class="pillar-box">
+                <div class="pillar-icon"><i class="fa-brands fa-python"></i></div>
+                <div>
+                  <h4>Python, AI/ML &amp; Software Development</h4>
+                  <p>Building practical applications, intelligent algorithms, and strengthening core engineering logic through hands-on development.</p>
+                </div>
+              </div>
+
+              <div class="pillar-box">
+                <div class="pillar-icon"><i class="fa-brands fa-react"></i></div>
+                <div>
+                  <h4>Full-Stack &amp; Modern Web Systems</h4>
+                  <p>Developing responsive frontend interfaces in React with Python Flask backend APIs and structured relational database modeling.</p>
+                </div>
+              </div>
+
+              <div class="pillar-box">
+                <div class="pillar-icon"><i class="fa-solid fa-user-tie"></i></div>
+                <div>
+                  <h4>Placement Coordination &amp; Leadership</h4>
+                  <p>Connecting students with placement drives, liaising with recruiters, and cultivating communication and team coordination skills.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- About Actions -->
+            <div class="about-action-row">
+              <a href="#contact" class="btn btn-primary">
+                <span>Start a Conversation</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#skills" class="btn btn-secondary">
+                <span>Explore Technical Stack</span>
+                <i class="fa-solid fa-layer-group"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic & Education Subcard -->
+        <div id="education" class="education-subcard">
+          <div class="edu-top">
+            <div class="edu-title-group">
+              <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <span class="edu-eyebrow">Academic Background</span>
+                <h3>Bachelor of Engineering in Computer Engineering</h3>
+                <div class="edu-college" style="font-size:0.86rem;color:var(--text-muted);margin-top:0.25rem;"><i class="fa-solid fa-building-columns"></i> Zeal College of Engineering and Research, Pune • Expected 2028</div>
+              </div>
+            </div>
+            <span class="edu-status-badge"><i class="fa-solid fa-star text-yellow"></i> CGPA: 8.91 / 10</span>
+          </div>
+
+          <div class="edu-spec-grid">
+            <div class="edu-spec-box">
+              <span class="spec-label"><i class="fa-solid fa-code"></i> Core Specialization</span>
+              <strong>Data Structures &amp; Software Systems</strong>
+              <p>Object-Oriented Programming, Data Structures (DSA), and Full-Stack Web Development.</p>
+            </div>
+            <div class="edu-spec-box">
+              <span class="spec-label"><i class="fa-solid fa-brain"></i> Applied Computation</span>
+              <strong>Python, AI/ML &amp; Data Analytics</strong>
+              <p>Python 3, AI/ML Fundamentals, relational database querying with SQL and MySQL.</p>
+            </div>
+            <div class="edu-spec-box">
+              <span class="spec-label"><i class="fa-solid fa-user-tie"></i> Leadership &amp; Placements</span>
+              <strong>Student Placement Coordinator</strong>
+              <p>Coordinating campus recruitment drives, student training workshops, and corporate liaison activities.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ================= PAGE 3: TECHNICAL SKILLS ================= -->
+      <section id="skills" class="portfolio-page section-page bento-card section-card interactive-card" data-reveal>
+        <!-- Page Background Dynamic Animation Layer -->
+        <div class="section-bg-fx skills-bg-fx" aria-hidden="true">
+          <div class="fx-matrix-dots"></div>
+        </div>
+
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag"><i class="fa-solid fa-layer-group"></i> 02. Technical Skills</span>
+            <h2>Full-Stack Competencies & Production Stack</h2>
+          </div>
+          <div class="section-badge-pill">
+            <i class="fa-solid fa-check-double"></i>
+            <span>4 Core Engineering Domains</span>
+          </div>
+        </div>
+
+        <div class="skills-full-grid">
+          <!-- Category 1: Frontend (HTML, CSS, JS, React) -->
+          <div class="skill-category-block">
+            <div class="category-title">
+              <div class="cat-icon-wrap bg-cyan-soft"><i class="fa-brands fa-react text-cyan"></i></div>
+              <div>
+                <h4>Frontend Engineering</h4>
+                <span class="cat-subtitle">HTML5, CSS3, JavaScript & React.js</span>
+              </div>
+            </div>
+            <p class="skill-cat-desc">Building intuitive, mobile-first, and highly responsive user experiences with
+              component-based UI architecture.</p>
+            <div class="skill-chips-wrap">
+              <div class="skill-badge"><i class="fa-brands fa-html5 text-orange"></i><span>HTML5 Semantic</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-css3-alt text-blue"></i><span>CSS3 / Flex &amp; Grid</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-js text-yellow"></i><span>JavaScript (ES6+)</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-react text-cyan"></i><span>React.js</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-wand-magic-sparkles text-accent"></i><span>CSS Animations</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-universal-access"></i><span>Responsive &amp; A11y</span></div>
+            </div>
+          </div>
+
+          <!-- Category 2: Programming & Backend (Python, Java, C/C++, DSA, Flask) -->
+          <div class="skill-category-block">
+            <div class="category-title">
+              <div class="cat-icon-wrap bg-blue-soft"><i class="fa-brands fa-python text-blue"></i></div>
+              <div>
+                <h4>Programming &amp; Backend</h4>
+                <span class="cat-subtitle">Python 3, Java, C, C++, DSA &amp; Flask</span>
+              </div>
+            </div>
+            <p class="skill-cat-desc">Building robust algorithmic logic, OOP architecture, RESTful microservices, and
+              data transformation pipelines.</p>
+            <div class="skill-chips-wrap">
+              <div class="skill-badge"><i class="fa-brands fa-python text-blue"></i><span>Python 3</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-java text-orange"></i><span>Java</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-code text-accent"></i><span>C &amp; C++</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-sitemap text-yellow"></i><span>DSA</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-pepper-hot text-rose"></i><span>Flask REST API</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-cubes text-cyan"></i><span>NumPy &amp; Pandas</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-chart-line text-purple"></i><span>Matplotlib</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-network-wired text-orange"></i><span>REST APIs</span></div>
+            </div>
+          </div>
+
+          <!-- Category 3: Database (MySQL, SQLite) -->
+          <div class="skill-category-block">
+            <div class="category-title">
+              <div class="cat-icon-wrap bg-purple-soft"><i class="fa-solid fa-database text-purple"></i></div>
+              <div>
+                <h4>Databases &amp; Data Modeling</h4>
+                <span class="cat-subtitle">MySQL, SQLite &amp; Schema Optimization</span>
+              </div>
+            </div>
+            <p class="skill-cat-desc">Relational schema design, query indexing, ACID compliance, data integrity, and
+              high-performance SQL workflows.</p>
+            <div class="skill-chips-wrap">
+              <div class="skill-badge"><i class="fa-solid fa-database text-blue"></i><span>MySQL Relational</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-server text-cyan"></i><span>SQLite Embedded</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-sitemap text-purple"></i><span>Relational Schema</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-bolt text-yellow"></i><span>Query Optimization</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-shield-halved text-accent"></i><span>Data Integrity &amp; ACID</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-table"></i><span>Indexes &amp; Foreign Keys</span></div>
+            </div>
+          </div>
+
+          <!-- Category 4: DevOps & Cloud (AWS, Linux) -->
+          <div class="skill-category-block">
+            <div class="category-title">
+              <div class="cat-icon-wrap bg-orange-soft"><i class="fa-brands fa-aws text-orange"></i></div>
+              <div>
+                <h4>DevOps &amp; Cloud Systems</h4>
+                <span class="cat-subtitle">AWS (EC2/S3), Linux CLI &amp; Version Control</span>
+              </div>
+            </div>
+            <p class="skill-cat-desc">Deploying scalable server infrastructure, configuring Linux environments,
+              automated builds, and Git workflows.</p>
+            <div class="skill-chips-wrap">
+              <div class="skill-badge"><i class="fa-brands fa-aws text-orange"></i><span>AWS (EC2, S3)</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-linux text-yellow"></i><span>Linux CLI &amp; Bash</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-git-alt text-rose"></i><span>Git &amp; GitHub</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-cloud-arrow-up text-cyan"></i><span>Vercel &amp; Netlify</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-terminal text-accent"></i><span>VS Code &amp; DevTools</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-gears"></i><span>CI/CD Deployment</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Developer Shell Sandbox Widget -->
+        <div class="terminal-shell-card">
+          <div class="terminal-shell-header">
+            <div class="terminal-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <div class="terminal-shell-title"><i class="fa-solid fa-terminal"></i> laxmi@developer-cli: ~ (Interactive
+              Stack Explorer)</div>
+            <span class="terminal-status-badge">ONLINE</span>
+          </div>
+
+          <div class="terminal-shell-body">
+            <div class="terminal-output" id="cli-history">
+              <div class="cli-line intro">Welcome to Laxmi's Interactive Full-Stack Terminal. Type <strong>help</strong>
+                or click quick chips below to inspect stack specs, APIs, and background pipelines:</div>
+            </div>
+
+            <div class="terminal-input-row">
+              <span class="cli-prompt">laxmi@fullstack:~$</span>
+              <input type="text" id="cli-input" class="cli-input-box"
+                placeholder="type a command (e.g. skills, python, react, aws, projects)..." autocomplete="off"
+                spellcheck="false" />
+            </div>
+
+            <div class="terminal-quick-chips">
+              <span class="chip-label">Quick Run:</span>
+              <button class="cli-pill-btn" data-cmd="skills">⚡ skills</button>
+              <button class="cli-pill-btn" data-cmd="resume">📄 resume</button>
+              <button class="cli-pill-btn" data-cmd="frontend">⚛️ frontend</button>
+              <button class="cli-pill-btn" data-cmd="backend">🐍 backend</button>
+              <button class="cli-pill-btn" data-cmd="database">🗄️ database</button>
+              <button class="cli-pill-btn" data-cmd="devops">☁️ devops</button>
+              <button class="cli-pill-btn" data-cmd="projects">🚀 projects</button>
+              <button class="cli-pill-btn" data-cmd="certificates">📜 certificates</button>
+              <button class="cli-pill-btn" data-cmd="clear">🧹 clear</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Banner Callout -->
+        <div class="skills-highlight-banner">
+          <div class="banner-pill"><i class="fa-solid fa-bolt text-accent"></i> Full-Stack Synergy</div>
+          <div class="banner-text">
+            <strong>Seamless End-to-End Delivery:</strong> From pixel-perfect React UI components down to Python data
+            transformation pipelines and AWS cloud hosting.
+          </div>
+          <a href="#projects" class="btn btn-secondary small-btn">
+            <span>View Projects In Action</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+      </section>
+
+
+      <!-- ================= PAGE 4: FEATURED PROJECTS ================= -->
+      <section id="projects" class="portfolio-page section-page bento-card section-card interactive-card" data-reveal>
+        <!-- Page Background Dynamic Animation Layer -->
+        <div class="section-bg-fx projects-bg-fx" aria-hidden="true">
+          <div class="fx-light-beam"></div>
+        </div>
+
+        <div class="section-header project-section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag"><i class="fa-solid fa-rocket"></i> 03. Featured Projects</span>
+            <h2>Featured Full-Stack Projects & Case Studies</h2>
+          </div>
+
+          <!-- Filter Controls -->
+          <div class="project-filters-bar" role="tablist" aria-label="Filter Projects">
+            <button class="filter-pill active" data-filter="all">All (<span id="count-all">6</span>)</button>
+            <button class="filter-pill" data-filter="frontend">Frontend & React</button>
+            <button class="filter-pill" data-filter="backend">Python & Backend</button>
+            <button class="filter-pill" data-filter="database">Databases & DevOps</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="project-grid">
+
+          <!-- Project 1: Hospital Management System Software (HMS) -->
+          <article class="project-card" data-category="backend database frontend">
+            <div class="project-mockup-wrapper bg-gradient-nebula">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <span class="mockup-title-tag">medcare-hms.health</span>
+              </div>
+              <div class="mockup-visual-scene">
+                <div class="scene-icon-glow"><i class="fa-solid fa-hospital-user"></i></div>
+                <div class="scene-badge">Full-Stack Hospital Suite</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-category-badge accent-orange">Healthcare Software</span>
+                <div class="project-links">
+                  <a href="https://github.com/laxmikumbhar589-web" target="_blank" rel="noopener noreferrer"
+                    class="link-icon" title="View Source on GitHub" aria-label="GitHub"><i
+                      class="fa-brands fa-github"></i></a>
+                  <button class="link-icon open-demo-btn" data-project="Hospital Management System"
+                    data-tech="React, Python, Flask, MySQL, AWS EC2, NumPy, Pandas"
+                    data-desc="Comprehensive hospital management software with multi-role access (Doctors, Patients, Admin, Pharmacists). Features electronic health records (EHR), OPD appointment scheduling, billing invoices, prescription dispatch, and hospital bed analytics."
+                    title="Interactive Preview" aria-label="Live Preview"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+              </div>
+
+              <h3 class="project-title">MedCare+ Hospital Management System</h3>
+              <p class="project-desc">
+                Enterprise healthcare software with patient admission workflows, doctor appointment booking, automated
+                billing, and a secure MySQL database backend.
+              </p>
+
+              <div class="project-tech-tags">
+                <span>React</span>
+                <span>Python</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+                <span>AWS</span>
+                <span>Pandas</span>
+              </div>
+
+              <ul class="project-feature-bullets">
+                <li><i class="fa-solid fa-check"></i> Role-based authentication for Doctors, Staff, and Patients.</li>
+                <li><i class="fa-solid fa-check"></i> EHR records, billing calculations, and prescription management.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 2: Campus Recruitment & Placement Portal -->
+          <article class="project-card" data-category="frontend backend database">
+            <div class="project-mockup-wrapper bg-gradient-zenith">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <span class="mockup-title-tag">campusplacement.edu</span>
+              </div>
+              <div class="mockup-visual-scene">
+                <div class="scene-icon-glow"><i class="fa-solid fa-user-graduate"></i></div>
+                <div class="scene-badge">Recruitment & Career Portal</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-category-badge accent-purple">Education & Career</span>
+                <div class="project-links">
+                  <a href="https://github.com/laxmikumbhar589-web" target="_blank" rel="noopener noreferrer"
+                    class="link-icon" title="View Source on GitHub" aria-label="GitHub"><i
+                      class="fa-brands fa-github"></i></a>
+                  <button class="link-icon open-demo-btn" data-project="Placement Portal"
+                    data-tech="React, JavaScript, Python, Flask, MySQL, Pandas, HTML5/CSS3"
+                    data-desc="End-to-end campus placement management platform connecting students, placement officers (TPOs), and recruiters. Features automated eligibility filtering via Pandas, job drive applications, interview round tracking, and analytics dashboards."
+                    title="Interactive Preview" aria-label="Live Preview"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+              </div>
+
+              <h3 class="project-title">NexPlacement Campus Placement Portal</h3>
+              <p class="project-desc">
+                Full-stack portal streamlining campus recruitment drives with student profile verification, automated
+                eligibility filtering, and offer tracking.
+              </p>
+
+              <div class="project-tech-tags">
+                <span>React</span>
+                <span>Python</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+                <span>Pandas</span>
+                <span>HTML5/CSS3</span>
+              </div>
+
+              <ul class="project-feature-bullets">
+                <li><i class="fa-solid fa-check"></i> Automated criteria screening (GPA, backlogs, skills) with Pandas.
+                </li>
+                <li><i class="fa-solid fa-check"></i> Recruiter job postings, resume reviews, and interview scheduling.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 3: Modern Professional Portfolio Web App -->
+          <article class="project-card" data-category="frontend interactive">
+            <div class="project-mockup-wrapper bg-gradient-aura">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <span class="mockup-title-tag">laxmi-kumbhar.dev</span>
+              </div>
+              <div class="mockup-visual-scene">
+                <div class="scene-icon-glow"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="scene-badge">Full-Stack Portfolio App</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-category-badge">Web Application</span>
+                <div class="project-links">
+                  <a href="https://github.com/laxmikumbhar589-web" target="_blank" rel="noopener noreferrer"
+                    class="link-icon" title="View Source on GitHub" aria-label="GitHub"><i
+                      class="fa-brands fa-github"></i></a>
+                  <button class="link-icon open-demo-btn" data-project="Professional Developer Portfolio"
+                    data-tech="HTML5, CSS3 Modern, JavaScript ES6+, React, Flask API, AWS"
+                    data-desc="Modern developer portfolio built with semantic HTML5, pure CSS custom variables, dynamic theme switching (Dark/Light), accent color customizer, project filtering, and 100/100 Lighthouse performance."
+                    title="Interactive Preview" aria-label="Live Preview"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+              </div>
+
+              <h3 class="project-title">Laxmi Full-Stack Portfolio App</h3>
+              <p class="project-desc">
+                High-performance modern portfolio web application with sequential page flow, interactive modals, theme
+                customization, and 100/100 Lighthouse performance.
+              </p>
+
+              <div class="project-tech-tags">
+                <span>HTML5</span>
+                <span>CSS3 Modern</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>AWS</span>
+              </div>
+
+              <ul class="project-feature-bullets">
+                <li><i class="fa-solid fa-check"></i> Sequential page architecture with active scrollspy navigation.
+                </li>
+                <li><i class="fa-solid fa-check"></i> 100/100 Lighthouse score with fluid 60FPS animations.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 4: AuraAnalytics - Python & Data Intelligence Suite -->
+          <article class="project-card" data-category="backend database frontend">
+            <div class="project-mockup-wrapper bg-gradient-pulse">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <span class="mockup-title-tag">aura-analytics.ai</span>
+              </div>
+              <div class="mockup-visual-scene">
+                <div class="scene-icon-glow"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="scene-badge">Python • Pandas • NumPy</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-category-badge accent-orange">Data & Backend</span>
+                <div class="project-links">
+                  <a href="https://github.com/laxmikumbhar589-web" target="_blank" rel="noopener noreferrer"
+                    class="link-icon" title="View Source on GitHub" aria-label="GitHub"><i
+                      class="fa-brands fa-github"></i></a>
+                  <button class="link-icon open-demo-btn" data-project="AuraAnalytics Suite"
+                    data-tech="Python, Flask, NumPy, Pandas, Matplotlib, React"
+                    data-desc="Data processing engine executing NumPy matrix math, Pandas dataset wrangling, and dynamic Matplotlib graphical charts served to a React frontend."
+                    title="Interactive Preview" aria-label="Live Preview"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+              </div>
+
+              <h3 class="project-title">AuraAnalytics Data Intelligence Suite</h3>
+              <p class="project-desc">
+                Analytics platform leveraging Python, Pandas, and NumPy for statistical calculations with Matplotlib
+                visualizations and Flask REST endpoints.
+              </p>
+
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Matplotlib</span>
+              </div>
+
+              <ul class="project-feature-bullets">
+                <li><i class="fa-solid fa-check"></i> High-speed statistical transformations with Pandas & NumPy.</li>
+                <li><i class="fa-solid fa-check"></i> Dynamic visualization feeds generated with Matplotlib & React UI.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 5: CloudPulse - AWS & Linux Server Monitoring Dashboard -->
+          <article class="project-card" data-category="database backend">
+            <div class="project-mockup-wrapper bg-gradient-aws">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <span class="mockup-title-tag">cloudpulse.internal</span>
+              </div>
+              <div class="mockup-visual-scene">
+                <div class="scene-icon-glow"><i class="fa-brands fa-aws"></i></div>
+                <div class="scene-badge">AWS • Linux • SQLite</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-category-badge accent-purple">DevOps & Cloud</span>
+                <div class="project-links">
+                  <a href="https://github.com/laxmikumbhar589-web" target="_blank" rel="noopener noreferrer"
+                    class="link-icon" title="View Source on GitHub" aria-label="GitHub"><i
+                      class="fa-brands fa-github"></i></a>
+                  <button class="link-icon open-demo-btn" data-project="CloudPulse Dashboard"
+                    data-tech="Python, Flask, AWS (EC2/S3), Linux Bash, SQLite, HTML5"
+                    data-desc="Cloud monitoring application that queries Linux server health, collects AWS instance telemetry, and logs system events to an optimized SQLite database with live alert dashboards."
+                    title="Interactive Preview" aria-label="Live Preview"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+              </div>
+
+              <h3 class="project-title">CloudPulse AWS & Linux Telemetry</h3>
+              <p class="project-desc">
+                Infrastructure monitoring engine tracking CPU, memory, and AWS metrics using Python daemon scripts on
+                Linux with SQLite storage.
+              </p>
+
+              <div class="project-tech-tags">
+                <span>AWS</span>
+                <span>Linux CLI</span>
+                <span>Python</span>
+                <span>Flask</span>
+                <span>SQLite</span>
+              </div>
+
+              <ul class="project-feature-bullets">
+                <li><i class="fa-solid fa-check"></i> Linux system metric harvesting with automated alert thresholds.
+                </li>
+                <li><i class="fa-solid fa-check"></i> Lightweight SQLite persistence for fast query retrieval.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 6: OmniStore - Full-Stack E-Commerce System -->
+          <article class="project-card" data-category="frontend backend database">
+            <div class="project-mockup-wrapper bg-gradient-chroma">
+              <div class="mockup-header-bar">
+                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                <span class="mockup-title-tag">omnistore.shop</span>
+              </div>
+              <div class="mockup-visual-scene">
+                <div class="scene-icon-glow"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="scene-badge">React • Flask • MySQL</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-category-badge">Full-Stack Commerce</span>
+                <div class="project-links">
+                  <a href="https://github.com/laxmikumbhar589-web" target="_blank" rel="noopener noreferrer"
+                    class="link-icon" title="View Source on GitHub" aria-label="GitHub"><i
+                      class="fa-brands fa-github"></i></a>
+                  <button class="link-icon open-demo-btn" data-project="OmniStore Portal"
+                    data-tech="React, JavaScript, HTML5/CSS3, Python, Flask, MySQL"
+                    data-desc="Complete full-stack e-commerce system featuring a modular React frontend, Flask REST APIs, MySQL relational schemas, transactional checkout, and inventory tracking."
+                    title="Interactive Preview" aria-label="Live Preview"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+              </div>
+
+              <h3 class="project-title">OmniStore Full-Stack Commerce System</h3>
+              <p class="project-desc">
+                Scalable e-commerce portal with React UI, Flask backend REST services, and normalized MySQL database
+                schemas for orders and products.
+              </p>
+
+              <div class="project-tech-tags">
+                <span>React</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Flask</span>
+                <span>MySQL</span>
+              </div>
+
+              <ul class="project-feature-bullets">
+                <li><i class="fa-solid fa-check"></i> Normalized MySQL database schema with indexes and relations.</li>
+                <li><i class="fa-solid fa-check"></i> Responsive React shopping cart with state management.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+
+      <!-- ================= PAGE 5: CAREER EXPERIENCE ================= -->
+      <section id="experience" class="portfolio-page section-page bento-card section-card interactive-card" data-reveal>
+        <!-- Page Background Dynamic Animation Layer -->
+        <div class="section-bg-fx exp-bg-fx" aria-hidden="true"></div>
+
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag"><i class="fa-solid fa-briefcase"></i> 04. Career Experience</span>
+            <h2>Professional Journey & Milestones</h2>
+          </div>
+          <div class="section-badge-pill">
+            <i class="fa-solid fa-timeline"></i>
+            <span>3 Key Milestones</span>
+          </div>
+        </div>
+
+        <div class="timeline-tree full-timeline">
+          <!-- Timeline Item 1: Student Placement Coordinator (Present 2026) -->
+          <div class="timeline-node">
+            <div class="node-marker"><span class="node-pulse"></span></div>
+            <div class="node-card">
+              <div class="node-heading">
+                <div class="node-title-group">
+                  <h4>Student Placement Coordinator</h4>
+                  <div class="node-company"><i class="fa-solid fa-user-tie"></i> Training &amp; Placement Cell</div>
+                </div>
+                <span class="node-period"><i class="fa-regular fa-calendar-check"></i> Present 2026</span>
+              </div>
+              <p>Serving as Student Placement Coordinator, helping connect students with campus placement opportunities, coordinating corporate recruitment drives, candidate shortlisting, and facilitating placement-related activities.</p>
+
+              <div class="node-highlights">
+                <div class="highlight-item"><i class="fa-solid fa-check text-accent"></i> Coordinated campus placement drives, company communication, and recruiter liaison activities.</div>
+                <div class="highlight-item"><i class="fa-solid fa-check text-accent"></i> Managed student eligibility filtering, profile screening, and pre-placement training sessions.</div>
+              </div>
+
+              <div class="node-tags">
+                <span>Placement Coordination</span><span>Corporate Relations</span><span>Student Mentorship</span><span>Campus Recruitment</span><span>Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Software Engineer Trainee @ TechLeaper Systems Pvt Ltd Narhe -->
+          <div class="timeline-node">
+            <div class="node-marker"></div>
+            <div class="node-card">
+              <div class="node-heading">
+                <div class="node-title-group">
+                  <h4>Software Engineer Trainee</h4>
+                  <div class="node-company"><i class="fa-solid fa-building"></i> TechLeaper Systems Pvt Ltd, Narhe (Pune)</div>
+                </div>
+                <span class="node-period"><i class="fa-regular fa-calendar"></i> 15/07/26 – 15/09/26</span>
+              </div>
+              <p>Delivered software trainee assignments emphasizing software engineering methodologies, database modeling, Python scripting logic, and client integration systems.</p>
+
+              <div class="node-highlights">
+                <div class="highlight-item"><i class="fa-solid fa-check text-accent"></i> Formulated structured relational database schemas and automated Python data processing workflows.</div>
+                <div class="highlight-item"><i class="fa-solid fa-check text-accent"></i> Participated in feature testing, system logic integration, and verification tasks.</div>
+              </div>
+
+              <div class="node-tags">
+                <span>Software Engineering</span><span>Python</span><span>Database Systems</span><span>Backend Logic</span><span>System Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Full-Stack Developer Trainee @ Omegasoft (2026) -->
+          <div class="timeline-node">
+            <div class="node-marker"></div>
+            <div class="node-card">
+              <div class="node-heading">
+                <div class="node-title-group">
+                  <h4>Full-Stack Developer Trainee</h4>
+                  <div class="node-company"><i class="fa-solid fa-building"></i> Omegasoft Technologies (FC Road, Pune)</div>
+                </div>
+                <span class="node-period"><i class="fa-regular fa-calendar"></i> 05/01/2026 – 04/02/2026 (2026)</span>
+              </div>
+              <p>Completed intensive full-stack developer training and project development, building dynamic React frontend interfaces combined with Python, Flask REST API endpoints, and MySQL database management.</p>
+
+              <div class="node-highlights">
+                <div class="highlight-item"><i class="fa-solid fa-check text-accent"></i> Developed modular React UI components and connected backend REST services with minimal latency.</div>
+                <div class="highlight-item"><i class="fa-solid fa-check text-accent"></i> Engineered MySQL database tables, relational schemas, and data access query layers.</div>
+              </div>
+
+              <div class="node-tags">
+                <span>React</span><span>Python</span><span>Flask</span><span>MySQL</span><span>HTML5/CSS3</span><span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ================= PAGE 6: CERTIFICATES & CREDENTIALS ================= -->
+      <section id="certificates" class="portfolio-page section-page bento-card section-card interactive-card"
+        data-reveal>
+        <!-- Page Background Dynamic Animation Layer -->
+        <div class="section-bg-fx cert-bg-fx" aria-hidden="true">
+          <div class="fx-starburst star-1">✦</div>
+          <div class="fx-starburst star-2">✦</div>
+          <div class="fx-starburst star-3">✦</div>
+        </div>
+
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag"><i class="fa-solid fa-award"></i> 05. Verified Credentials</span>
+            <h2>Professional Certifications & Internships</h2>
+          </div>
+          <div class="section-badge-pill">
+            <i class="fa-solid fa-shield-halved text-accent"></i>
+            <span>3 Verified Documents</span>
+          </div>
+        </div>
+
+        <div class="certificates-grid">
+          <!-- Certificate 1: Omegasoft Technologies -->
+          <article class="certificate-card">
+            <div class="certificate-preview-box" data-cert-src="assets/certificate-omegasoft.png"
+              data-cert-title="Intern Full Stack Developer - Omegasoft Technologies"
+              data-cert-issuer="Omegasoft Technologies (FC Road, Pune)" data-cert-date="05/01/2026 – 04/02/2026">
+              <img src="assets/certificate-omegasoft.png"
+                alt="Omegasoft Technologies Full Stack Developer Internship Certificate - Laxmi Kumbhar"
+                class="cert-thumb-img" loading="lazy" />
+              <div class="cert-overlay">
+                <span class="cert-zoom-btn"><i class="fa-solid fa-expand"></i> Click to View Full Document</span>
+              </div>
+            </div>
+
+            <div class="certificate-info">
+              <div class="cert-meta-row">
+                <span class="cert-type-badge badge-cyan"><i class="fa-solid fa-code"></i> Full-Stack Internship</span>
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> 05/01/2026 – 04/02/2026</span>
+              </div>
+
+              <h3 class="cert-title">Intern Full Stack Developer</h3>
+              <div class="cert-issuer">
+                <i class="fa-solid fa-building"></i>
+                <span>Omegasoft Technologies (FC Road, Pune)</span>
+              </div>
+
+              <p class="cert-desc">
+                Awarded for completing an intensive full-stack developer internship with high comprehension, maximal efficiency, and outstanding professional demeanour.
+              </p>
+
+              <div class="cert-tags">
+                <span>React</span><span>Python</span><span>Flask</span><span>MySQL</span><span>Full-Stack</span>
+              </div>
+
+              <div class="cert-action-row">
+                <button class="btn btn-secondary small-btn view-cert-btn"
+                  data-cert-src="assets/certificate-omegasoft.png"
+                  data-cert-title="Intern Full Stack Developer - Omegasoft Technologies"
+                  data-cert-issuer="Omegasoft Technologies (FC Road, Pune)" data-cert-date="05/01/2026 – 04/02/2026">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Inspect Certificate</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Certificate 2: TechLeaper Systems Pvt Ltd -->
+          <article class="certificate-card">
+            <div class="certificate-preview-box" data-cert-src="assets/certificate-techleaper.png"
+              data-cert-title="Software Trainee Internship - TechLeaper Systems Pvt Ltd"
+              data-cert-issuer="TechLeaper Systems Pvt Ltd (Narhe, Pune)"
+              data-cert-date="15/07/2026 – 15/09/2026">
+              <img src="assets/certificate-techleaper.png"
+                alt="TechLeaper Systems Software Trainee Certificate - Laxmi Kumbhar" class="cert-thumb-img"
+                loading="lazy" />
+              <div class="cert-overlay">
+                <span class="cert-zoom-btn"><i class="fa-solid fa-expand"></i> Click to View Full Document</span>
+              </div>
+            </div>
+
+            <div class="certificate-info">
+              <div class="cert-meta-row">
+                <span class="cert-type-badge badge-purple"><i class="fa-solid fa-laptop-code"></i> Software Engineering</span>
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> 15/07/2026 – 15/09/2026</span>
+              </div>
+
+              <h3 class="cert-title">Software Trainee Internship</h3>
+              <div class="cert-issuer">
+                <i class="fa-solid fa-building"></i>
+                <span>TechLeaper Systems Pvt Ltd (Narhe, Pune)</span>
+              </div>
+
+              <p class="cert-desc">
+                Completed software trainee internship delivering project assignments with dedication, database schemas, and client systems integration.
+              </p>
+
+              <div class="cert-tags">
+                <span>Software Engineering</span><span>Database Systems</span><span>Backend Logic</span><span>Python</span>
+              </div>
+
+              <div class="cert-action-row">
+                <button class="btn btn-secondary small-btn view-cert-btn"
+                  data-cert-src="assets/certificate-techleaper.png"
+                  data-cert-title="Software Trainee - TechLeaper Systems Pvt Ltd"
+                  data-cert-issuer="TechLeaper Systems Pvt Ltd (Narhe, Pune)"
+                  data-cert-date="15/07/2026 – 15/09/2026">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Inspect Certificate</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Certificate 3: Educative Python 3 -->
+          <article class="certificate-card">
+            <div class="certificate-preview-box" data-cert-src="assets/certificate-python-educative.png"
+              data-cert-title="Learn Python 3 Certification - Educative Inc." data-cert-issuer="Educative Inc."
+              data-cert-date="May 09, 2026" data-cert-id="9ETECBVCCT">
+              <img src="assets/certificate-python-educative.png"
+                alt="Educative Learn Python 3 Certificate - Laxmi Kumbhar" class="cert-thumb-img" loading="lazy" />
+              <div class="cert-overlay">
+                <span class="cert-zoom-btn"><i class="fa-solid fa-expand"></i> Click to View Full Document</span>
+              </div>
+            </div>
+
+            <div class="certificate-info">
+              <div class="cert-meta-row">
+                <span class="cert-type-badge badge-orange"><i class="fa-brands fa-python"></i> Python Certified</span>
+                <span class="cert-date"><i class="fa-regular fa-calendar"></i> May 09, 2026</span>
+              </div>
+
+              <h3 class="cert-title">Learn Python 3 Interactive Course</h3>
+              <div class="cert-issuer">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Educative Inc. • Credential ID: 9ETECBVCCT (10 Hours)</span>
+              </div>
+
+              <p class="cert-desc">
+                Verified certificate demonstrating proficiency in Python 3 syntax, object-oriented programming, data structures, and algorithmic logic.
+              </p>
+
+              <div class="cert-tags">
+                <span>Python 3</span><span>OOP</span><span>Data Structures</span><span>Algorithms</span>
+              </div>
+
+              <div class="cert-action-row">
+                <button class="btn btn-secondary small-btn view-cert-btn"
+                  data-cert-src="assets/certificate-python-educative.png"
+                  data-cert-title="Learn Python 3 - Completion Certificate" data-cert-issuer="Educative Inc."
+                  data-cert-date="May 09, 2026" data-cert-id="9ETECBVCCT">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>Inspect Certificate</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- ================= PAGE 7: CONTACT & COLLABORATION ================= -->
+      <section id="contact" class="portfolio-page section-page bento-card section-card interactive-card" data-reveal>
+        <!-- Page Background Dynamic Animation Layer -->
+        <div class="section-bg-fx contact-bg-fx" aria-hidden="true"></div>
+
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> 06. Contact & Hire</span>
+            <h2>Let's Build Something Extraordinary Together</h2>
+          </div>
+          <div class="section-badge-pill">
+            <span class="pulse-indicator"></span>
+            <span>Open to Opportunities</span>
+          </div>
+        </div>
+
+        <div class="contact-section-grid">
+          <!-- Direct Channels & Info -->
+          <div class="contact-info-column">
+            <div class="contact-lead-box">
+              <h3 class="contact-h3">Have an exciting idea or hiring opportunity?</h3>
+              <p class="contact-subtext">
+                Let's collaborate on Full-Stack web applications, React frontends, Python & Flask backends, database
+                modeling, or AWS cloud deployments.
+              </p>
+            </div>
+
+            <div class="direct-channels-list">
+              <!-- 1-Click Copy Email Card -->
+              <div class="direct-channel-card" id="copy-email-card" role="button" tabindex="0"
+                title="Click to copy email">
+                <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="channel-meta">
+                  <span>Email (Click to Copy)</span>
+                  <strong>laxmikumbhar589@gmail.com</strong>
+                </div>
+                <i class="fa-regular fa-copy copy-hint-icon"></i>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/laxmi-kumbhar" target="_blank" rel="noopener noreferrer"
+                class="direct-channel-card" title="Open LinkedIn Profile">
+                <div class="channel-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="channel-meta">
+                  <span>LinkedIn Profile</span>
+                  <strong>linkedin.com/in/laxmi-kumbhar</strong>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square copy-hint-icon"></i>
+              </a>
+
+              <!-- GitHub Card -->
+              <a href="https://github.com/laxmikumbhar589-web" target="_blank" rel="noopener noreferrer"
+                class="direct-channel-card" title="Open GitHub Profile">
+                <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="channel-meta">
+                  <span>GitHub Repositories</span>
+                  <strong>github.com/laxmikumbhar589-web</strong>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square copy-hint-icon"></i>
+              </a>
+            </div>
+
+            <div class="response-pledge-box">
+              <i class="fa-solid fa-clock"></i>
+              <span>Average response turnaround: less than 24 hours</span>
+            </div>
+          </div>
+
+          <!-- On-Page Direct Message Form -->
+          <div class="contact-form-column">
+            <form class="contact-form" id="page-contact-form" autocomplete="off" novalidate>
+              <!-- Project Type Selection Chips -->
+              <div class="form-group">
+                <label>What's your project or inquiry about?</label>
+                <div class="project-chips">
+                  <button type="button" class="type-chip active" data-type="Full-Stack Role">💼 Full-Stack Role</button>
+                  <button type="button" class="type-chip" data-type="React / Frontend">⚛️ React / Frontend</button>
+                  <button type="button" class="type-chip" data-type="Python / Flask">🐍 Python & Flask</button>
+                  <button type="button" class="type-chip" data-type="MySQL / Database">🗄️ MySQL / Database</button>
+                  <button type="button" class="type-chip" data-type="AWS / DevOps">☁️ AWS & DevOps</button>
+                </div>
+                <input type="hidden" name="project_type" id="page_project_type_input" value="Full-Stack Role" />
+              </div>
+
+              <div class="form-group">
+                <label for="page-user-name">Your Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user form-icon"></i>
+                  <input type="text" id="page-user-name" name="custom_visitor_name" placeholder="e.g. Alex Morgan"
+                    autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required />
+                </div>
+                <span class="field-error" id="page-name-error">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="page-user-email">Your Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope form-icon"></i>
+                  <input type="text" inputmode="email" id="page-user-email" name="custom_visitor_email"
+                    placeholder="e.g. alex@company.com" autocomplete="off" autocorrect="off" autocapitalize="off"
+                    spellcheck="false" required />
+                </div>
+                <span class="field-error" id="page-email-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="page-user-message">Message Details <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <textarea id="page-user-message" name="custom_visitor_message" rows="4"
+                    placeholder="Describe your project, goals, team needs, or role details..." autocomplete="off"
+                    spellcheck="false" required></textarea>
+                </div>
+                <span class="field-error" id="page-message-error">Please enter your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn" id="page-submit-form-btn">
+                <span class="btn-text">Send Direct Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-branding">
+        <div class="brand-avatar">L</div>
+        <div>
+          <span class="footer-logo-text">Laxmi Kumbhar</span>
+          <p>Full-Stack Developer: HTML, CSS, JavaScript, React, Python, Flask, NumPy, Pandas, Matplotlib, MySQL,
+            SQLite, AWS, Linux.</p>
+        </div>
+      </div>
+
+      <div class="footer-navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials" aria-label="Social links">
+        <a href="https://github.com/laxmikumbhar589-web" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub Profile" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/laxmi-kumbhar" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn Profile" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:laxmikumbhar589@gmail.com" aria-label="Email Laxmi Kumbhar" title="Email"><i
+            class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2026</span> Laxmi Kumbhar. Full-Stack Developer (Frontend, Backend, Database, DevOps).
+      </p>
+      <div class="keyboard-hints">
+        <span><kbd>T</kbd> Toggle Theme</span>
+        <span><kbd>C</kbd> Contact Modal</span>
+        <span><kbd>Esc</kbd> Close</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= INTERACTIVE PROJECT PREVIEW MODAL ================= -->
+  <div class="modal-overlay" id="project-preview-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" id="project-modal-backdrop"></div>
+    <div class="modal-card project-modal-card">
+      <button class="modal-close-btn" id="project-modal-close" aria-label="Close Project Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="project-modal-header">
+        <span class="modal-badge"><i class="fa-solid fa-eye"></i> Full-Stack Sandbox Preview</span>
+        <h2 id="modal-project-title">Project Title</h2>
+        <div class="modal-tech-stack" id="modal-project-tech"></div>
+      </div>
+      <div class="project-modal-body">
+        <div class="interactive-preview-sandbox">
+          <div class="sandbox-toolbar">
+            <div class="sandbox-dots"><span></span><span></span><span></span></div>
+            <div class="sandbox-url-bar"><i class="fa-solid fa-lock"></i> https://preview.laxmi.dev/demo</div>
+            <button class="sandbox-refresh-btn" id="sandbox-refresh" title="Simulate reload"><i
+                class="fa-solid fa-rotate-right"></i></button>
+          </div>
+          <div class="sandbox-viewport" id="sandbox-viewport">
+            <div class="sandbox-demo-ui">
+              <div class="demo-card-skeleton">
+                <div class="demo-spinner"><i class="fa-solid fa-server fa-spin"></i></div>
+                <h4 id="demo-interactive-title">Live Preview Active</h4>
+                <p id="modal-project-desc">Description details...</p>
+                <div class="demo-controls">
+                  <button class="btn btn-primary small-btn" id="demo-action-btn">Test API Endpoint</button>
+                  <a href="https://github.com/laxmikumbhar589-web" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-secondary small-btn">Source Code <i class="fa-brands fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= INTERACTIVE CONTACT MODAL (ACCESSIBLE VIA CTA & HOTKEY) ================= -->
+  <div class="modal-overlay" id="contact-modal" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="contact-modal-title">
+    <div class="modal-backdrop" id="contact-modal-backdrop"></div>
+    <div class="modal-card contact-modal-card">
+      <button class="modal-close-btn" id="contact-modal-close" aria-label="Close Contact Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="contact-modal-grid">
+        <!-- Direct Channels Info Side -->
+        <div class="contact-info-column">
+          <div class="status-pill mb-3">
+            <span class="pulse-indicator"></span>
+            <span>Fast Inquiries Welcome</span>
+          </div>
+          <h2 id="contact-modal-title">Let's build something extraordinary.</h2>
+          <p class="contact-subtext">Have a full-stack opportunity, React/Python project, or database design inquiry?
+            Send a message below.</p>
+
+          <div class="direct-channels-list">
+            <!-- 1-Click Copy Email Card -->
+            <div class="direct-channel-card" id="modal-copy-email-card" role="button" tabindex="0"
+              title="Click to copy email">
+              <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="channel-meta">
+                <span>Email (Click to Copy)</span>
+                <strong>laxmikumbhar589@gmail.com</strong>
+              </div>
+              <i class="fa-regular fa-copy copy-hint-icon"></i>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/laxmi-kumbhar" target="_blank" rel="noopener noreferrer"
+              class="direct-channel-card" title="Open LinkedIn Profile">
+              <div class="channel-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="channel-meta">
+                <span>LinkedIn</span>
+                <strong>linkedin.com/in/laxmi-kumbhar</strong>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square copy-hint-icon"></i>
+            </a>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/laxmikumbhar589-web" target="_blank" rel="noopener noreferrer"
+              class="direct-channel-card" title="Open GitHub Profile">
+              <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="channel-meta">
+                <span>GitHub</span>
+                <strong>github.com/laxmikumbhar589-web</strong>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square copy-hint-icon"></i>
+            </a>
+          </div>
+
+          <div class="response-pledge-box">
+            <i class="fa-solid fa-clock"></i>
+            <span>Average turnaround: less than 24 hours</span>
+          </div>
+        </div>
+
+        <!-- Contact Form Side -->
+        <div class="contact-form-column">
+          <form class="contact-form" id="contact-form" autocomplete="off" novalidate>
+            <!-- Project Type Selection Chips -->
+            <div class="form-group">
+              <label>What's your project about?</label>
+              <div class="project-chips">
+                <button type="button" class="type-chip active" data-type="Full-Stack Role">💼 Full-Stack Role</button>
+                <button type="button" class="type-chip" data-type="React / Frontend">⚛️ React / Frontend</button>
+                <button type="button" class="type-chip" data-type="Python / Flask">🐍 Python & Flask</button>
+                <button type="button" class="type-chip" data-type="MySQL / Database">🗄️ MySQL / Database</button>
+                <button type="button" class="type-chip" data-type="AWS / DevOps">☁️ AWS & DevOps</button>
+              </div>
+              <input type="hidden" name="project_type" id="project_type_input" value="Full-Stack Role" />
+            </div>
+
+            <div class="form-group">
+              <label for="user-name">Your Name <span class="required">*</span></label>
+              <div class="input-wrapper">
+                <i class="fa-regular fa-user form-icon"></i>
+                <input type="text" id="user-name" name="custom_visitor_name" placeholder="e.g. Alex Morgan"
+                  autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required />
+              </div>
+              <span class="field-error" id="name-error">Please enter your name</span>
+            </div>
+
+            <div class="form-group">
+              <label for="user-email">Your Email Address <span class="required">*</span></label>
+              <div class="input-wrapper">
+                <i class="fa-regular fa-envelope form-icon"></i>
+                <input type="text" inputmode="email" id="user-email" name="custom_visitor_email"
+                  placeholder="e.g. alex@company.com" autocomplete="off" autocorrect="off" autocapitalize="off"
+                  spellcheck="false" required />
+              </div>
+              <span class="field-error" id="email-error">Please enter a valid email address</span>
+            </div>
+
+            <div class="form-group">
+              <label for="user-message">Message <span class="required">*</span></label>
+              <div class="input-wrapper textarea-wrapper">
+                <textarea id="user-message" name="custom_visitor_message" rows="4"
+                  placeholder="Describe your project, goals, or role details..." autocomplete="off" spellcheck="false"
+                  required></textarea>
+              </div>
+              <span class="field-error" id="message-error">Please enter your message</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn" id="submit-form-btn">
+              <span class="btn-text">Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CERTIFICATE LIGHTBOX MODAL ================= -->
+  <div class="modal-overlay" id="cert-lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="cert-modal-title">
+    <div class="modal-backdrop" id="cert-modal-backdrop"></div>
+    <div class="modal-card cert-modal-card">
+      <button class="modal-close-btn" id="cert-modal-close" aria-label="Close Certificate Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="cert-modal-header">
+        <div class="cert-modal-badge"><i class="fa-solid fa-shield-halved text-accent"></i> Verified Credential Document</div>
+        <h2 id="cert-modal-title">Certificate Title</h2>
+        <div class="cert-modal-meta">
+          <span id="cert-modal-issuer"><i class="fa-solid fa-building"></i> Issuer</span>
+          <span id="cert-modal-date"><i class="fa-regular fa-calendar"></i> Date</span>
+          <span id="cert-modal-id" class="cert-id-badge"><i class="fa-solid fa-barcode"></i> ID</span>
+        </div>
+      </div>
+
+      <div class="cert-modal-body">
+        <div class="cert-image-container">
+          <img src="" id="cert-modal-img" alt="Verified Certificate High Resolution Preview" class="cert-full-view-img" />
+        </div>
+        <div class="cert-modal-footer">
+          <a href="" id="cert-download-link" download class="btn btn-primary small-btn">
+            <i class="fa-solid fa-download"></i>
+            <span>Download High-Res Document</span>
+          </a>
+          <button class="btn btn-secondary small-btn" id="cert-modal-dismiss">
+            <span>Close Viewer</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Application Logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>
