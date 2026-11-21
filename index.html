@@ -227,16 +227,39 @@
             </div>
           </div>
 
-          <!-- Hero Portrait with Floating Badges -->
+          <!-- Hero Portrait with Floating Badges & Sequential Photo Carousel -->
           <div class="hero-visual-wrapper tilt-container">
-            <div class="portrait-card">
-              <img src="assets/profile-pic.png"
-                alt="Laxmi Kumbhar - Third-Year Computer Engineering Student | Python, AI/ML & Placement Coordinator" class="portrait-img"
-                loading="eager" />
+            <div class="portrait-card" id="hero-slideshow" aria-label="Laxmi Kumbhar photo showcase">
+              <div class="slideshow-track">
+                <div class="hero-slide active" data-index="0">
+                  <img src="assets/profile-pic.png"
+                    alt="Laxmi Kumbhar - Third-Year Computer Engineering Student | Python, AI/ML & Placement Coordinator"
+                    class="portrait-img" loading="eager" />
+                </div>
+                <div class="hero-slide" data-index="1">
+                  <img src="assets/profile-pic-2.jpg"
+                    alt="Laxmi Kumbhar - Campus Leadership & Tech Professional"
+                    class="portrait-img" loading="lazy" />
+                </div>
+              </div>
+
+              <!-- Quick Navigation Arrows -->
+              <button class="slide-nav-btn slide-prev" aria-label="Previous photo" title="Previous photo">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="slide-nav-btn slide-next" aria-label="Next photo" title="Next photo">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+
+              <!-- Indicators & Progress Dots -->
+              <div class="slide-indicators" aria-label="Slideshow Indicators">
+                <button class="indicator-dot active" data-slide="0" aria-label="Show Photo 1"></button>
+                <button class="indicator-dot" data-slide="1" aria-label="Show Photo 2"></button>
+              </div>
 
               <div class="portrait-corner-badge">
                 <span class="pulse-indicator"></span>
-                <span>Active Coordinator</span>
+                <span class="badge-status-text">Active Coordinator</span>
               </div>
             </div>
 
@@ -1507,6 +1530,48 @@
           </button>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- ================= ASK AI CHATBOT WIDGET ================= -->
+  <div class="askai-fab" id="askai-fab" title="Ask AI about Laxmi">
+    <i class="fa-solid fa-robot"></i>
+    <span class="askai-fab-label">Ask AI</span>
+    <span class="askai-fab-pulse"></span>
+  </div>
+
+  <div class="askai-panel" id="askai-panel" aria-hidden="true">
+    <div class="askai-header">
+      <div class="askai-header-left">
+        <div class="askai-avatar"><i class="fa-solid fa-robot"></i></div>
+        <div class="askai-header-info">
+          <span class="askai-title">Ask AI</span>
+          <span class="askai-status"><span class="askai-online-dot"></span>Online • Laxmi's Portfolio Assistant</span>
+        </div>
+      </div>
+      <button class="askai-close-btn" id="askai-close" aria-label="Close Ask AI"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="askai-messages" id="askai-messages">
+      <div class="askai-msg askai-msg-bot">
+        <div class="askai-msg-avatar"><i class="fa-solid fa-robot"></i></div>
+        <div class="askai-msg-bubble">
+          <p>👋 Hi! I'm <strong>Laxmi's AI Assistant</strong>. Ask me anything about her skills, projects, experience, education, or how to get in touch!</p>
+          <div class="askai-suggestions">
+            <button class="askai-suggestion-chip" data-q="What are Laxmi's skills?">💡 Skills</button>
+            <button class="askai-suggestion-chip" data-q="Tell me about Laxmi's projects">🚀 Projects</button>
+            <button class="askai-suggestion-chip" data-q="What is Laxmi's experience?">💼 Experience</button>
+            <button class="askai-suggestion-chip" data-q="How can I contact Laxmi?">📧 Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="askai-input-area">
+      <input type="text" class="askai-input" id="askai-input" placeholder="Ask me anything about Laxmi..." autocomplete="off" />
+      <button class="askai-send-btn" id="askai-send" aria-label="Send message">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
     </div>
   </div>
 
